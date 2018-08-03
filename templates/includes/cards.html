@@ -20,7 +20,7 @@
         </div>
         <div class="likes">
             <a href="{% url 'tuites:like' tuite.pk %}">
-               
+                {% tuite_liked_icon %}
                {{ tuite.likes_count }}
             </a>
         </div>
