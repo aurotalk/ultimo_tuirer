@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>Tuirer</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="tuirer-container">
+            {% include 'includes/menu.html' %}
+            {% block body %}
+            Hello.
+            {% endblock %}
+        </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background: yellow;
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", "Segoe UI", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: #9e0a0a;
+}
+.error{
+    color:blue;
+    font-size: .8em
+
+}
+.message{
+    padding: 5px 10px;
+    margin: 10px 0;
+    background:#f324;
+    color: #fff;
+    font-size: .9em;
+    border-radius: 3px;
+
+
+}
+.tuirer-container {
+    margin: 0 auto;
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}

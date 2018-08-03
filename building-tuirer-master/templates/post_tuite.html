@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block body %}
+<div class="post-tuite-container">
+    {% if form.errors %}
+        {% for error in form.non_field_errors %}
+            <p class="error">{{ error }}</p>
+        {% endfor %}
+    {% endif %}
+    
+    {% if messages %} 
+        {% for message in messages %}
+            <p class="message">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            {% render_field field class="post-tuite-field" placeholder=field.label autofocus=True %}
+        {% endfor %}
+        <input type="submit" value="Postar Tuite">
+    </form>
+</div>
+{% endblock %}
